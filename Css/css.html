@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />4
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Introduction to CSS</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -40,14 +43,24 @@
         background-color: red;
       }
 
-      h2[class] {
+      /* h2[class] {
         color: rgb(247, 94, 12);
+      } */
+
+      h2{
+        width: 300px;
+        height: 100px;
+        color: rgb(26, 24, 24);
+        background-color: #EE605B;
+        padding: 20px 10px;
+        margin-top : 20px;
+        border: 10px solid red;
       }
     </style>
   </head>
 
   <body>
-    <h2 class="">Heading Level 2</h2>
+    <h2 class="" style="color: #401A87;">Heading Level 2</h2>
 
     <h3 id="heading">Types of CSS :</h3>
 
@@ -73,13 +86,13 @@
     <section>
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, non
+          Lorem <a href="https://codeshare.io/" id="link" style="background-color: #f75759; width: 20px; "></a>ipsum dolor sit amet consectetur adipisicing elit. Mollitia, non
           ad molestiae sit temporibus incidunt esse. Soluta iusto commodi natus
           at.
         </p>
       </div>
 
-      <p>
+      <p style="font-family: 'Poppins', 'sans-serif', cursive;">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
         perspiciatis quos assumenda!
       </p>
