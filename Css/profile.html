@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+    }
+
+    .profile-card{
+        width: 350px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 10 20px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .card-header{
+        background: #4285F4;
+        height: 120px;
+    }
+
+    .profile-pic{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        padding: 3px;
+        background: #fff;
+        margin-top: -60px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 10px 20px 30px;
+    }
+
+    .name{
+        font-size: 25px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .title {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .social-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover{
+        transform: scale(1.1);
+    }
+
+    .social-icons a.facebook { background: #1877f2; }
+    .social-icons a.twitter { background: #1877f2; }
+    .social-icons a.instagram { background: #E4405F; }
+    .social-icons a.youtube { background: #FF0000; }
+
+    .action-buttons{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .action-buttons button{
+        padding: 10px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #4285FA;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s;
+        flex: 1;
+    }
+
+    .action-buttons button:hover{
+        background: #3367D6;
+    }
+
+    .stats{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .stats-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        color: #444;
+        font-weight: 500;
+    }
+
+    .stat-item i{
+        color: #555;
+        font-size: 16px;
+    }
+
+    .divider{
+        width: 1px;
+        height: 15px;
+        background: #ccc;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="card-header"></div>
+        
+        <div class="card-content">
+            <img src="https://drone-zoom.com/wp-content/uploads/avatars/2/5f2219cdc0cc7-bpfull.jpg" alt="Profile Picture" class="profile-pic">
+            
+            <h2 class="name">CodingLab</h2>
+            <p class="title">YouTuber & Blogger</p>
+
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="action-buttons">
+                <button>Subscribe</button>
+                <button>Message</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="far fa-heart"></i> 60.4k
+                </div>
+                <div class="divider"></div>
+                <div class="stat-item">
+                    <i class="far fa-comment"></i> 20k
+                </div>
+                <div class="divider"></div>
+                <div class="stat-item">
+                    <i class="fas fa-reply"></i> 12.4k
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
