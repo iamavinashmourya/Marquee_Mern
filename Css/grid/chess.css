@@ -1,0 +1,31 @@
+ body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+
+  .chess-board {
+    width: 400px;
+    height: 400px;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border: 4px solid rgb(17, 16, 16);
+  }
+
+  .square {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .square:nth-child(8n+1),
+  .square:nth-child(8n+3) {
+    background-color: black;
+  }
+
+  .square:nth-child(8n+5),
+  .square:nth-child(8n+7) {
+    background-color: black;
+  }
