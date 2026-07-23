@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #e6e6e9;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: repeat(3, 120px);
+            gap: 12px;
+        }
+
+        
+
+        /* Left Green */
+        .item1 {
+            background: #74c34f;
+            grid-row: span 3;
+        }
+
+        /* Top Green */
+        .item2 {
+            background: #74c34f;
+            grid-column: span 2;
+        }
+
+        /* Top Right Red */
+        .item3 {
+            background: #ff3030;
+        }
+
+        /* Middle Left Orange */
+        .item4 {
+            background: orange;
+        }
+
+        /* Middle Right Red */
+        .item5 {
+            background: #ff3030;
+        }
+
+        /* Right Green */
+        .item6 {
+            background: #74c34f;
+            grid-row: span 2;
+        }
+
+        /* Bottom Left Red */
+        .item7 {
+            background: #ff3030;
+        }
+
+        /* Bottom Right Orange */
+        .item8 {
+            background: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+
+</body>
+
+</html>

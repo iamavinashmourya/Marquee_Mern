@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eee;
+}
+
+.container{
+
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    grid-auto-rows:120px;
+
+    gap:15px;
+}
+
+.grid-items{
+
+    overflow:hidden;
+    border:3px solid white;
+    background:white;
+}
+
+.items{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
